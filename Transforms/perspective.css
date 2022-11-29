@@ -1,0 +1,71 @@
+.flex {
+  display: flex;
+}
+
+.scene {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin: 40px;
+}
+
+.red {
+  width: 100%;
+  height: 100%;
+  background: red;
+
+  /* perspective function in transform property */
+  transform: perspective(600px) rotateY(45deg);
+}
+
+.scene2 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin: 40px;
+
+  /* perspective property */
+  perspective: 600px;
+}
+
+.blue {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+
+  /* perspective: 400px; */
+  transform: rotateY(45deg);
+}
+
+.scene3 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin: 40px;
+}
+
+.panel {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin: 5px;
+  background: red;
+  transform: perspective(400px) rotateY(45deg);
+}
+
+.scene4 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin: 40px;
+  perspective: 400px;
+}
+
+.panel4 {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin: 5px;
+  background: blue;
+  transform: rotateY(45deg);
+}
