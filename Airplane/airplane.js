@@ -13,3 +13,12 @@ $light.addEventListener('click', () => {
   $clouds.classList.toggle('opacity0');
   $clouds.classList.toggle('opacity1');
 });
+
+const $plane = document.querySelector('.body');
+
+$plane.addEventListener('click', () => {
+  $plane.classList.add('lost-control');
+  setTimeout(() => {
+    $plane.classList.remove('lost-control');
+  }, 2000);
+});

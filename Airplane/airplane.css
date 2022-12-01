@@ -310,7 +310,15 @@
   position: relative;
   transform-style: preserve-3d;
   transition: 1s linear;
-  animation: flying 10s infinite ease-in-out;
+  animation: flying 10s infinite linear;
+}
+
+.body:hover {
+  cursor: pointer;
+}
+
+.lost-control {
+  animation: lost-control 2s linear;
 }
 
 .left-wing,
@@ -352,15 +360,45 @@
 
 @keyframes flying {
   0% {
+    transform: rotateX(80deg) rotateY(15deg) translateX(0%);
+  }
+
+  25% {
     transform: rotateX(80deg) rotateY(15deg) translateX(-200%);
   }
 
   50% {
-    transform: rotateX(80deg) rotateY(-15deg) translateX(200%);
+    transform: rotateX(80deg) rotateY(-15deg) translateX(0%);
+  }
+
+  75% {
+    transform: rotateX(80deg) rotateY(15deg) translateX(200%);
   }
 
   100% {
-    transform: rotateX(80deg) rotateY(15deg) translateX(-200%);
+    transform: rotateX(80deg) rotateY(15deg) translateX(0);
+  }
+}
+
+@keyframes lost-control {
+  0% {
+    transform: rotateX(80deg) rotateY(15deg) translateX(0);
+  }
+
+  25% {
+    transform: rotateX(780deg) rotateY(45deg) translateY(-100%) translateX(-200%);
+  }
+
+  50% {
+    transform: rotateX(280deg) rotateY(-15deg) translateX(200%);
+  }
+
+  75% {
+    transform: rotateX(880deg) rotateY(135deg) translateY(100%) translateX(200%);
+  }
+
+  100% {
+    transform: rotateX(440deg) rotateY(15deg) translateX(0);
   }
 }
 
