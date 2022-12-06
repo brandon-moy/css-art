@@ -1,5 +1,5 @@
 .scene {
-  margin: 20vh auto;
+  margin: 60vh auto;
   width: 200px;
   height: 260px;
   perspective: 600px;
@@ -11,7 +11,7 @@
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  transform-origin: center right;
+  transform-origin: top;
 }
 
 /* transform-origin tells what the starting position should be for
@@ -45,9 +45,40 @@ back to backside facing front */
 /* having this transform pushed this as the backside of the card */
 
 .card.is-flipped {
-  transform: translateX(-100%) rotateY(180deg);
+  /* transform: rotateX(180deg) translateY(50%); */
+  animation: flip-to-back 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+.card.recycled {
+  animation: recycle 0.5s linear;
+  animation-fill-mode: forwards;
 }
 
 /* this transform is what flips the card and moves it "in place" due to the
 transform-origin we pair it with translateX so that it stays in the same
 position */
+
+@keyframes flip-to-back {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: rotateX(180deg) translateY(50%);
+  }
+}
+
+@keyframes recycle {
+  from {
+    transform: rotateX(180deg) translateY(50%);
+  }
+
+  to {
+    transform: translateY(100%) translateX(-100%) rotateX(180deg);
+  }
+}

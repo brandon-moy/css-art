@@ -318,7 +318,7 @@
 }
 
 .lost-control {
-  animation: lost-control 2s linear;
+  animation: lost-control 2s ease-out;
 }
 
 .left-wing,
