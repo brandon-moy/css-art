@@ -1,5 +1,5 @@
 .scene {
-  margin: 30vh auto;
+  margin: 50vh auto;
   width: 200px;
   height: 260px;
   perspective: 600px;
@@ -14,36 +14,78 @@
   background:
     repeating-linear-gradient(
       to right,
-      #fffde3 0%,
-      #fffde3 5%,
-      #fff89a 5%,
-      #fff89a 6.25%,
-      #fffde3 6.25%
+      #fffcd5 0%,
+      #fffcd5 4%,
+      #fff454 4%,
+      #fff454 5.5%,
+      #fffcd5 5.5%
     );
 }
 
 .fry {
+  z-index: 1;
+  position: absolute;
   background-color: #f7c41f;
+  width: 0.6rem;
+  height: 17.5vh;
+  transition: transform 0.5s linear;
+}
+
+.fry:nth-child(1) {
+  transform: translateY(35%) translateX(0.75rem) rotateZ(-5deg);
+}
+
+.fry:nth-child(2) {
+  transform: translateY(30%) translateX(1.75rem) rotateZ(-2.5deg);
+}
+
+.fry:nth-child(3) {
+  transform: translateY(20%) translateX(2.75rem) rotateZ(-1deg);
+}
+
+.fry:nth-child(4) {
+  transform: translateY(7.5%) translateX(4rem) rotateZ(-3deg);
+}
+
+.fry:nth-child(5) {
+  transform: translateY(5%) translateX(5.25rem) rotateZ(1deg);
+}
+
+.fry:nth-child(6) {
+  transform: translateY(7.5%) translateX(6.5rem) rotateZ(2.75deg);
+}
+
+.fry:nth-child(7) {
+  transform: translateY(20%) translateX(7.75rem) rotateZ(2deg);
+}
+
+.fry:nth-child(8) {
+  transform: translateY(30%) translateX(8.75rem) rotateZ(2.5deg);
+}
+
+.fry:nth-child(9) {
+  transform: translateY(35%) translateX(9.75rem) rotateZ(5deg);
 }
 
 .front {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   left: -0.5rem;
   bottom: 2rem;
 }
 
 .shadow {
-  width: 90%;
-  height: 10vh;
+  margin-left: 0.5rem;
+  width: 85%;
+  height: 7.5vh;
   border-radius: 50%;
-  background: rgb(116 116 116);
-  transform: translateY(300%) rotateX(75deg);
+  background: rgb(184 184 184);
+  transform: translateY(375%) rotateX(75deg);
 }
 
 .logo {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   width: 30%;
   top: 50%;
   left: 32%;
