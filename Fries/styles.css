@@ -1,0 +1,22 @@
+.scene {
+  margin: 30vh auto;
+  width: 200px;
+  height: 260px;
+  perspective: 600px;
+}
+
+.back {
+  width: 90%;
+  height: 30vh;
+  border-radius: 50%;
+  border: 0.25px solid rgb(241 241 241);
+  background:
+    repeating-linear-gradient(
+      to right,
+      #fffde3 0%,
+      #fffde3 5%,
+      #fff89a 5%,
+      #fff89a 6.25%,
+      #fffde3 6.25%
+    );
+}
