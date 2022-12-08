@@ -1,8 +1,14 @@
+html {
+  overflow: hidden;
+}
+
 .scene {
   margin: 50vh auto;
   width: 200px;
   height: 260px;
   perspective: 600px;
+
+  /* animation: bounce 0.75s ease-in-out infinite; */
 }
 
 .back {
@@ -75,12 +81,17 @@
 }
 
 .shadow {
-  margin-left: 0.5rem;
-  width: 85%;
-  height: 7.5vh;
+  position: absolute;
+  z-index: -1;
+  width: 12.5%;
+  height: 10vh;
   border-radius: 50%;
-  background: rgb(184 184 184);
-  transform: translateY(375%) rotateX(75deg);
+  background: rgb(182 182 182);
+  bottom: 0;
+  left: 43%;
+  transform: translateY(-125%) rotateX(75deg);
+
+  /* animation: grow-shadow 0.75s linear infinite; */
 }
 
 .logo {
@@ -89,4 +100,44 @@
   width: 30%;
   top: 50%;
   left: 32%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  45% {
+    transform: translateY(-30%);
+  }
+
+  55% {
+    transform: translateY(-30%);
+  }
+
+  95% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes grow-shadow {
+  0% {
+    transform: translateY(-125%) rotateX(75deg) scale(1);
+    background: rgb(182 182 182);
+  }
+
+  45% {
+    transform: translateY(-125%) rotateX(75deg) scale(0.6);
+    background: rgb(210 210 210);
+  }
+
+  55% {
+    transform: translateY(-125%) rotateX(75deg) scale(0.6);
+    background: rgb(210 210 210);
+  }
+
+  95% {
+    transform: translateY(-125%) rotateX(75deg) scale(1);
+    background: rgb(182 182 182);
+  }
 }
