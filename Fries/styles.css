@@ -7,9 +7,10 @@
 
 .back {
   position: absolute;
+  top: 0.5rem;
   width: 90%;
-  padding-top: 30vh;
-  border-radius: 50% 50% 0 0;
+  height: 15vh;
+  border-radius: 150px 150px 0 0;
   background:
     repeating-linear-gradient(
       to right,
@@ -38,4 +39,12 @@
   border-radius: 50%;
   background: rgb(116 116 116);
   transform: translateY(300%) rotateX(75deg);
+}
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  width: 30%;
+  top: 50%;
+  left: 32%;
 }
