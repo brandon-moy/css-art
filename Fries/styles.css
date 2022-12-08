@@ -6,10 +6,10 @@
 }
 
 .back {
+  position: absolute;
   width: 90%;
-  height: 30vh;
-  border-radius: 50%;
-  border: 0.25px solid rgb(241 241 241);
+  padding-top: 30vh;
+  border-radius: 50% 50% 0 0;
   background:
     repeating-linear-gradient(
       to right,
@@ -19,4 +19,23 @@
       #fff89a 6.25%,
       #fffde3 6.25%
     );
+}
+
+.fry {
+  background-color: #f7c41f;
+}
+
+.front {
+  z-index: 1;
+  position: absolute;
+  left: -0.5rem;
+  bottom: 2rem;
+}
+
+.shadow {
+  width: 90%;
+  height: 10vh;
+  border-radius: 50%;
+  background: rgb(116 116 116);
+  transform: translateY(300%) rotateX(75deg);
 }
