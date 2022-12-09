@@ -144,6 +144,24 @@ html {
   }
 }
 
+@keyframes yeet {
+  0% {
+    transform: translateY(-30%);
+  }
+
+  50% {
+    transform: translateY(-70%);
+  }
+
+  80% {
+    transform: translateY(-75%) rotateZ(180deg);
+  }
+
+  100% {
+    transform: translateY(-80%) rotateZ(180deg);
+  }
+}
+
 @keyframes grow-shadow {
   0% {
     transform: translateY(-125%) rotateX(75deg) scale(1);
@@ -172,6 +190,23 @@ html {
 
   100% {
     transform: translateY(-125%) rotateX(75deg) scale(1);
+    background: rgb(182 182 182);
+  }
+}
+
+@keyframes yeet-shadow {
+  0% {
+    transform: translateY(-125%) rotateX(75deg) scale(0.8);
+    background: rgb(210 210 210);
+  }
+
+  80% {
+    transform: translateY(-125%) rotateX(75deg) scale(0.55);
+    background: rgb(210 210 210);
+  }
+
+  100% {
+    transform: translateY(-80%) rotateX(75deg) scale(1.5);
     background: rgb(182 182 182);
   }
 }
@@ -371,5 +406,171 @@ html {
 
   95% {
     transform: translateY(35%) translateX(9.75rem) rotateZ(5deg);
+  }
+}
+
+@keyframes fall1 {
+  0% {
+    transform: translateY(35%) translateX(0.75rem) rotateZ(-5deg);
+  }
+
+  75% {
+    transform: translateY(35%) translateX(0.75rem) rotateZ(-5deg);
+  }
+
+  80% {
+    transform: translateY(-200%) translateX(1.5rem);
+  }
+
+  100% {
+    transform: translateY(-210%) translateX(2rem) rotateZ(90deg);
+  }
+}
+
+@keyframes fall2 {
+  0% {
+    transform: translateY(30%) translateX(1.75rem) rotateZ(-2.5deg);
+  }
+
+  75% {
+    transform: translateY(30%) translateX(1.75rem) rotateZ(-2.5deg);
+  }
+
+  80% {
+    transform: translateY(-180%) translateX(2.25rem) rotateZ(-82deg);
+  }
+
+  90% {
+    transform: translateY(-190%) translateX(3rem) rotateZ(-90deg);
+  }
+
+  100% {
+    transform: translateY(-190%) translateX(4rem) rotateZ(-87deg);
+  }
+}
+
+@keyframes fall3 {
+  0% {
+    transform: translateY(20%) translateX(2.75rem) rotateZ(-1deg);
+  }
+
+  70% {
+    transform: translateY(15%) translateX(2.75rem) rotateZ(-1deg);
+  }
+
+  75% {
+    transform: translateY(-210%) translateX(3.25rem) rotateZ(-46deg);
+  }
+
+  100% {
+    transform: translateY(-212%) translateX(3.75rem) rotateZ(-58deg);
+  }
+}
+
+@keyframes fall4 {
+  0% {
+    transform: translateY(7.5%) translateX(4rem) rotateZ(-3deg);
+  }
+
+  85% {
+    transform: translateY(0%) translateX(4rem) rotateZ(-3deg);
+  }
+
+  90% {
+    transform: translateY(-190%) translateX(4.5rem) rotateZ(-87deg);
+  }
+
+  100% {
+    transform: translateY(-190%) translateX(4rem) rotateZ(-68deg);
+  }
+}
+
+@keyframes fall5 {
+  0% {
+    transform: translateY(5%) translateX(5.25rem) rotateZ(1deg);
+  }
+
+  55% {
+    transform: translateY(-5%) translateX(5.25rem) rotateZ(1deg);
+  }
+
+  85% {
+    transform: translateY(-200%) translateX(6rem) rotateZ(87deg);
+  }
+
+  100% {
+    transform: translateY(-205%) translateX(5.25rem) rotateZ(110deg);
+  }
+}
+
+@keyframes fall6 {
+  0% {
+    transform: translateY(7.5%) translateX(6.5rem) rotateZ(2.75deg);
+  }
+
+  65% {
+    transform: translateY(2.5%) translateX(6.5rem) rotateZ(2.75deg);
+  }
+
+  85% {
+    transform: translateY(-192.5%) translateX(7.25rem) rotateZ(46deg);
+  }
+
+  100% {
+    transform: translateY(-200%) translateX(6.5rem) rotateZ(57deg);
+  }
+}
+
+@keyframes fall7 {
+  0% {
+    transform: translateY(20%) translateX(7.75rem) rotateZ(2deg);
+  }
+
+  75% {
+    transform: translateY(10%) translateX(7.75rem) rotateZ(2deg);
+  }
+
+  85% {
+    transform: translateY(-180%) translateX(7.75rem) rotateZ(57deg);
+  }
+
+  100% {
+    transform: translateY(-190%) translateX(7.75rem) rotateZ(52deg);
+  }
+}
+
+@keyframes fall8 {
+  0% {
+    transform: translateY(30%) translateX(8.75rem) rotateZ(2.5deg);
+  }
+
+  85% {
+    transform: translateY(10%) translateX(8.75rem) rotateZ(2.5deg);
+  }
+
+  90% {
+    transform: translateY(-195%) translateX(9.25rem) rotateZ(-52deg);
+  }
+
+  100% {
+    transform: translateY(-205%) translateX(8.75rem) rotateZ(-73deg);
+  }
+}
+
+@keyframes fall9 {
+  0% {
+    transform: translateY(35%) translateX(9.75rem) rotateZ(5deg);
+  }
+
+  65% {
+    transform: translateY(25%) translateX(9.75rem) rotateZ(5deg);
+  }
+
+  90% {
+    transform: translateY(-185%) translateX(10rem) rotateZ(-83deg);
+  }
+
+  100% {
+    transform: translateY(-205%) translateX(11.75rem) rotateZ(-134deg);
   }
 }
