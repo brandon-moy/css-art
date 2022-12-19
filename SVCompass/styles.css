@@ -1,7 +1,8 @@
 .background {
+  position: relative;
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
   background:
     conic-gradient(
       rgb(209 72 72),
@@ -13,8 +14,65 @@
 }
 
 .compass {
+  position: absolute;
   border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
+  width: 4rem;
+  height: 4rem;
   background: white;
+  left: 1rem;
+  top: 1rem;
+}
+
+.hand {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.25rem;
+  background: rgb(216 181 116);
+  border-radius: 0.25rem;
+}
+
+.hand:nth-child(1) {
+  left: 1.6rem;
+  top: 0.5rem;
+  transform: rotateZ(90deg);
+}
+
+.hand:nth-child(2) {
+  right: 0.25rem;
+  top: 1.9rem;
+}
+
+.hand:nth-child(3) {
+  left: 1.6rem;
+  bottom: 0.5rem;
+  transform: rotateZ(90deg);
+}
+
+.hand:nth-child(4) {
+  top: 1.9rem;
+  left: 0.25rem;
+}
+
+.hand:nth-child(5) {
+  transform: rotateZ(-45deg);
+  right: 0.6rem;
+  top: 0.9rem;
+}
+
+.hand:nth-child(6) {
+  transform: rotateZ(45deg);
+  right: 0.6rem;
+  bottom: 0.9rem;
+}
+
+.hand:nth-child(7) {
+  transform: rotateZ(-45deg);
+  bottom: 0.9rem;
+  left: 0.6rem;
+}
+
+.hand:nth-child(8) {
+  transform: rotate(45deg);
+  top: 0.9rem;
+  left: 0.6rem;
 }
