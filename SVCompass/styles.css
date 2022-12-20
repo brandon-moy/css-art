@@ -90,10 +90,12 @@
 
 .circle {
   position: absolute;
-  width: 0.25rem;
-  height: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
   background: white;
   border-radius: 50%;
+  left: 1.6rem;
+  top: 1.6rem;
 }
 
 @keyframes background-spin {
