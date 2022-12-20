@@ -1,6 +1,12 @@
+body {
+  background: black;
+}
+
 .background {
   animation: background-spin 2s linear infinite;
-  position: relative;
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
@@ -24,8 +30,8 @@
   width: 4rem;
   height: 4rem;
   background: white;
-  left: 1rem;
-  top: 1rem;
+  right: 1.5rem;
+  bottom: 2.5rem;
 }
 
 .hand {
