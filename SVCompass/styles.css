@@ -1,5 +1,5 @@
 .background {
-  /* animation: background-spin 2s linear infinite; */
+  animation: background-spin 2s linear infinite;
   position: relative;
   border-radius: 50%;
   width: 5rem;
@@ -96,7 +96,7 @@
   position: relative;
   width: 4rem;
   height: 4rem;
-  animation: arrow-tick 6s cubic-bezier(0.1, -0.3, 0.2, 0) infinite;
+  animation: arrow-tick 5s cubic-bezier(0.1, -0.3, 0.4, 0.2) infinite;
 }
 
 .circle {
