@@ -1,5 +1,5 @@
 .background {
-  animation: background-spin 2s linear infinite;
+  /* animation: background-spin 2s linear infinite; */
   position: relative;
   border-radius: 50%;
   width: 5rem;
@@ -92,6 +92,13 @@
   background: rgb(216 181 116);
 }
 
+.arrow-container {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  animation: arrow-tick 6s cubic-bezier(0.1, -0.3, 0.2, 0) infinite;
+}
+
 .circle {
   position: absolute;
   width: 0.75rem;
@@ -109,5 +116,27 @@
 
   to {
     transform: rotateZ(360deg);
+  }
+}
+
+@keyframes arrow-tick {
+  0% {
+    transform: rotateZ(-35deg);
+  }
+
+  25% {
+    transform: rotateZ(10deg);
+  }
+
+  50% {
+    transform: rotateZ(-60deg);
+  }
+
+  75% {
+    transform: rotateZ(30deg);
+  }
+
+  100% {
+    transform: rotateZ(-35deg);
   }
 }
