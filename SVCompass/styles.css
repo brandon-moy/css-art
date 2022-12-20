@@ -1,5 +1,5 @@
 .background {
-  animation: background-spin 2s linear infinite;
+  /* animation: background-spin 2s linear infinite; */
   position: relative;
   border-radius: 50%;
   width: 5rem;
@@ -7,10 +7,10 @@
   background:
     conic-gradient(
       rgb(209 72 72),
-      rgb(85 85 255),
-      rgb(69 255 69),
-      rgb(255 255 92),
-      rgb(209 72 72)
+      rgb(85 85 255) 12.5%,
+      rgb(69 255 69) 37.5%,
+      rgb(255 255 92) 62.5%,
+      rgb(209 72 72) 87.5%
     );
 }
 
@@ -76,6 +76,24 @@
   transform: rotate(45deg);
   top: 0.9rem;
   left: 0.6rem;
+}
+
+.arrow {
+  position: absolute;
+  width: 2rem;
+  height: 1rem;
+  transform: skew(60deg);
+  left: 1rem;
+  top: 1.5rem;
+  background: rgb(216 181 116);
+}
+
+.circle {
+  position: absolute;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: white;
+  border-radius: 50%;
 }
 
 @keyframes background-spin {
