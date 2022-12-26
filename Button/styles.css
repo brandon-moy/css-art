@@ -8,9 +8,6 @@ body {
 
 .follow-me {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .body1 {
@@ -33,4 +30,28 @@ body {
   background: blue;
 }
 
-/* purple, red, pink, gold, blue */
+.button1 {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.button2 {
+  left: 75%;
+  top: 80%;
+}
+
+.button3 {
+  left: 10%;
+  top: 90%;
+}
+
+.button4 {
+  left: 27%;
+  top: 82%;
+}
+
+.button5 {
+  right: 5%;
+  top: 10%;
+}
