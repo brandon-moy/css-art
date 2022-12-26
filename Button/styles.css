@@ -7,7 +7,7 @@ body {
 }
 
 .follow-me {
-  position: absolute;
+  transition: transform 0.5s linear;
 }
 
 .body1 {
@@ -31,27 +31,21 @@ body {
 }
 
 .button1 {
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(1000%) translateY(1500%);
 }
 
 .button2 {
-  left: 75%;
-  top: 80%;
+  transform: translateX(200%) translateY(200%);
 }
 
 .button3 {
-  left: 10%;
-  top: 90%;
+  transform: translateX(1000%) translateY(800%);
 }
 
 .button4 {
-  left: 27%;
-  top: 82%;
+  transform: translateX(800%) translateY(2000%);
 }
 
 .button5 {
-  right: 5%;
-  top: 10%;
+  transform: translateX(2000%) translateY(2000%);
 }
