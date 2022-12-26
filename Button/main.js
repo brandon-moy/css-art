@@ -1,4 +1,4 @@
-const $troll = document.querySelector('.troll');
+const $troll = document.querySelector('.follow-me');
 const $body = document.querySelector('body');
 
 $troll.addEventListener('click', () => {
