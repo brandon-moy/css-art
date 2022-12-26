@@ -12,3 +12,25 @@ body {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+
+.body1 {
+  background: purple;
+}
+
+.body2 {
+  background: red;
+}
+
+.body3 {
+  background: pink;
+}
+
+.body4 {
+  background: gold;
+}
+
+.body5 {
+  background: blue;
+}
+
+/* purple, red, pink, gold, blue */
