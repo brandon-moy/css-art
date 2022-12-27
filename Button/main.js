@@ -66,8 +66,14 @@ function createBackgroundColor() {
 }
 
 function handleButton(event) {
-  const positionX = Math.floor(Math.random() * window.innerWidth);
-  const positionY = Math.floor(Math.random() * window.innerHeight);
+  let positionX = Math.floor(Math.random() * window.innerWidth);
+  if (positionX > (window.innerWidth - $button.offsetWidth)) {
+    positionX -= $button.offsetWidth;
+  }
+  let positionY = Math.floor(Math.random() * window.innerHeight);
+  if (positionY > (window.innerHeight - $button.offsetHeight)) {
+    positionY -= $button.offsetHeight;
+  }
   $button.style.transform = `translateX(${positionX}px) translateY(${positionY}px)`;
 }
 
