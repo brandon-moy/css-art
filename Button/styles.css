@@ -59,23 +59,3 @@ body {
 .follow-me {
   transition: transform 0.5s linear;
 }
-
-.button1 {
-  transform: translateX(1000%) translateY(1500%);
-}
-
-.button2 {
-  transform: translateX(200%) translateY(200%);
-}
-
-.button3 {
-  transform: translateX(1000%) translateY(800%);
-}
-
-.button4 {
-  transform: translateX(800%) translateY(2000%);
-}
-
-.button5 {
-  transform: translateX(2000%) translateY(2000%);
-}

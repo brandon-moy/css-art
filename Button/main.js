@@ -6,6 +6,7 @@ const directions = ['top', 'bottom', 'left', 'right'];
 
 $button.addEventListener('click', () => {
   handleBackground();
+  handleButton();
 });
 
 // console.log(window.innerWidth);
@@ -45,3 +46,9 @@ function handleBackground(event) {
 // take max width and height of screen?
 // then take Math.random and multiple by the width and height of the screen
 // move the button to that position in pixels?
+
+function handleButton(event) {
+  const positionX = Math.floor(Math.random() * window.innerWidth);
+  const positionY = Math.floor(Math.random() * window.innerHeight);
+  $button.style.transform = `translateX(${positionX}px) translateY(${positionY}px)`;
+}
