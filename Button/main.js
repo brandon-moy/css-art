@@ -1,15 +1,11 @@
 const $button = document.querySelector('.follow-me');
 const $body = document.querySelector('body');
 
-let lastLevel = 0;
-let currentLevel = 1;
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'violet'];
+const directions = ['top', 'bottom', 'left', 'right'];
 
 $button.addEventListener('click', () => {
-  lastLevel = currentLevel;
-  currentLevel++;
-  $body.className = 'body' + currentLevel;
-  $button.classList.remove('button' + lastLevel);
-  $button.classList.add('button' + currentLevel);
+  handleBackground();
 });
 
 // console.log(window.innerWidth);
@@ -21,10 +17,14 @@ $button.addEventListener('click', () => {
 
 // Randomize background and randomize button location
 
-// function handleClick(event) {
-//   lastLevel = currentLevel;
-//   currentLevel++;
-// }
+function handleBackground(event) {
+  const color1 = colors[Math.floor(Math.random() * colors.length)];
+  const color2 = colors[Math.floor(Math.random() * colors.length)];
+  const color3 = colors[Math.floor(Math.random() * colors.length)];
+  const direction = directions[Math.floor(Math.random() * directions.length)];
+  $body.style.background = `linear-gradient(to ${direction}, var(--${color1}), var(--${color2}), var(--${color3}), var(--${color1}))`;
+  $body.style.backgroundSize = '200%';
+}
 
 // for background:
 // Option A: create background color variables
