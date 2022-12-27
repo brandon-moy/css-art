@@ -74,8 +74,35 @@ body {
 }
 
 .modal-container {
+  position: relative;
   margin: 5rem auto;
-  width: 50%;
+  width: 80%;
   height: 50%;
   background: white;
+  border-radius: 0.25rem;
+}
+
+.start-header {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.start-instructions {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.start-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 1290px) {
+  .modal-container {
+    width: 40%;
+    height: 40%;
+  }
 }
