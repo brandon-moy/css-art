@@ -23,7 +23,8 @@ function handleBackground(event) {
   const color3 = colors[Math.floor(Math.random() * colors.length)];
   const direction = directions[Math.floor(Math.random() * directions.length)];
   $body.style.background = `linear-gradient(to ${direction}, var(--${color1}), var(--${color2}), var(--${color3}), var(--${color1}))`;
-  $body.style.backgroundSize = '200%';
+  $body.style.backgroundSize = '200% 4000%';
+  $body.style.animation = `background-${direction} 3s linear infinite`;
 }
 
 // for background:
