@@ -1,7 +1,11 @@
 :root {
+  --red: rgb(200 28 28);
+  --orange: rgb(250 143 33);
+  --yellow: rgb(227 229 83);
+  --green: rgb(120 229 131);
+  --blue: rgb(120 230 230);
   --purple: rgb(123 31 162);
   --violet: rgb(103 58 183);
-  --pink: rgb(244 143 177);
 }
 
 * {
@@ -10,6 +14,8 @@
 
 body {
   margin: 0;
+  animation: background-pan 3s linear infinite;
+  background-size: 200%;
 }
 
 @keyframes background-pan {
@@ -24,35 +30,6 @@ body {
 
 .follow-me {
   transition: transform 0.5s linear;
-}
-
-.body1 {
-  animation: background-pan 3s linear infinite;
-  background:
-    linear-gradient(
-      to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
-    );
-  background-size: 200%;
-}
-
-.body2 {
-  background: red;
-}
-
-.body3 {
-  background: pink;
-}
-
-.body4 {
-  background: gold;
-}
-
-.body5 {
-  background: blue;
 }
 
 .button1 {

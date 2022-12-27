@@ -12,12 +12,19 @@ $button.addEventListener('click', () => {
   $button.classList.add('button' + currentLevel);
 });
 
-// What should click event do?
+// console.log(window.innerWidth);
+// console.log(window.innerHeight);
 
+// What should click event do?
 // Set last level to the current level
 // Increment current level by 1
 
 // Randomize background and randomize button location
+
+// function handleClick(event) {
+//   lastLevel = currentLevel;
+//   currentLevel++;
+// }
 
 // for background:
 // Option A: create background color variables
