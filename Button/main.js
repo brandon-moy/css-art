@@ -1,7 +1,6 @@
 const $button = document.querySelector('.follow-me');
 const $body = document.querySelector('body');
 
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'violet'];
 const directions = ['top', 'bottom', 'left', 'right'];
 
 $button.addEventListener('click', () => {
@@ -19,15 +18,21 @@ $button.addEventListener('click', () => {
 // Randomize background and randomize button location
 
 function handleBackground(event) {
-  const color1 = colors[Math.floor(Math.random() * colors.length)];
-  const color2 = colors[Math.floor(Math.random() * colors.length)];
-  const color3 = colors[Math.floor(Math.random() * colors.length)];
+  const color1 = createBackgroundColor();
+  const color2 = createBackgroundColor();
+  const color3 = createBackgroundColor();
   const direction = directions[Math.floor(Math.random() * directions.length)];
-  $body.style.background = `linear-gradient(to ${direction}, var(--${color1}), var(--${color2}), var(--${color3}), var(--${color1}))`;
+  $body.style.background = `linear-gradient(to ${direction}, ${color1}, ${color2}, ${color3}, ${color1})`;
   $body.style.backgroundSize = '200% 4000%';
   $body.style.animation = `background-${direction} 3s linear infinite`;
 }
 
+function createBackgroundColor() {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r}, ${g}, ${b})`;
+}
 // for background:
 // Option A: create background color variables
 // create an array containing the variables
