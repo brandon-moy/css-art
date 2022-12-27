@@ -87,7 +87,7 @@ function handleTimer() {
       $modal.classList.toggle('hidden');
       $start.classList.toggle('hidden');
       $end.classList.toggle('hidden');
-      $clickTotal.textContent = clicks;
+      $clickTotal.textContent = `${clicks} times`;
     }
   }, 1000);
 }
