@@ -1,13 +1,3 @@
-:root {
-  --red: rgb(200 28 28);
-  --orange: rgb(250 143 33);
-  --yellow: rgb(227 229 83);
-  --green: rgb(120 229 131);
-  --blue: rgb(120 230 230);
-  --purple: rgb(123 31 162);
-  --violet: rgb(103 58 183);
-}
-
 * {
   box-sizing: border-box;
 }
