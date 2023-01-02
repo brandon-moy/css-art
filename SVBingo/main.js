@@ -1,6 +1,7 @@
 const $text = document.querySelectorAll('.text');
 const $reset = document.querySelector('.reset');
 const $cardBody = document.querySelector('.card-body');
+const $blocks = document.querySelectorAll('.block');
 const options = [
   'Under 1FT', 'Holding Item', 'Dog Pokemon', 'No Evolution', 'Baby Pokemon',
   'Scarlet Exclusive', 'Violet Exclusive', 'Fuecoco', 'Sprigatito', 'Quaxly',
@@ -19,6 +20,7 @@ function resetCards(e) {
   const shuffled = shuffleOptions(options);
   for (let i = 0; i < $text.length; i++) {
     $text[i].textContent = shuffled[i];
+    $blocks[i].classList.remove('acquired');
   }
 }
 
