@@ -1,5 +1,6 @@
-const $blocks = document.querySelectorAll('.block');
+const $text = document.querySelectorAll('.text');
 const $reset = document.querySelector('.reset');
+const $cardBody = document.querySelector('.card-body');
 const options = [
   'Under 1FT', 'Holding Item', 'Dog Pokemon', 'No Evolution', 'Baby Pokemon',
   'Scarlet Exclusive', 'Violet Exclusive', 'Fuecoco', 'Sprigatito', 'Quaxly',
@@ -12,14 +13,20 @@ const options = [
 ];
 
 $reset.addEventListener('click', resetCards);
+$cardBody.addEventListener('click', toggleAcquired);
 
-function resetCards() {
+function resetCards(e) {
   const shuffled = shuffleOptions(options);
-  for (let i = 0; i < $blocks.length; i++) {
-    $blocks[i].textContent = shuffled[i];
+  for (let i = 0; i < $text.length; i++) {
+    $text[i].textContent = shuffled[i];
   }
 }
 
 function shuffleOptions(arr) {
   return arr.sort(() => Math.random() - 0.5);
+}
+
+function toggleAcquired(e) {
+  const block = e.target.closest('div');
+  block.classList.toggle('acquired');
 }
