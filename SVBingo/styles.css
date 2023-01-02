@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+}
+
+.card {
+  width: 90%;
+  margin: auto;
+}
+
+.card-header {
+  width: 100%;
+  color: white;
+  background-color: red;
+}
+
+.card-header th {
+  width: 20%;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.card-body td {
+  width: 20%;
+  height: 12.5vh;
+  border: 1px solid black;
+}
