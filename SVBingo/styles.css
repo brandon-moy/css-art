@@ -16,6 +16,8 @@ table {
 }
 
 .card-header {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   color: white;
   background-color: red;
@@ -27,10 +29,12 @@ table {
 
 .card-body {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card-body td {
-  width: 20%;
-  height: 12.5vh;
+.block {
+  flex-basis: 20%;
+  aspect-ratio: 1 / 1;
   border: 1px solid black;
 }
