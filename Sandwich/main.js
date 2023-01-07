@@ -4,6 +4,7 @@ const $navbar = document.querySelector('.navbar');
 let target = null;
 let offset = [];
 let id = 1;
+let z = 1;
 
 window.addEventListener('mousedown', mouseDown);
 window.addEventListener('mouseup', mouseUp);
@@ -13,12 +14,14 @@ $navbar.addEventListener('click', modifyComponent);
 function mouseUp() {
   target = null;
   offset = [];
+  z++;
 }
 
 function mouseDown(e) {
   if (e.target.tagName !== 'IMG') return;
   target = e.target;
   offset = [e.target.offsetWidth / 2, e.target.offsetHeight / 2];
+  target.style.zIndex = z;
 }
 
 function move(e) {
