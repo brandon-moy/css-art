@@ -8,4 +8,20 @@ body {
 
 .bread {
   position: absolute;
+  width: 20rem;
+}
+
+.cheese {
+  position: absolute;
+  width: 10rem;
+}
+
+.tomato {
+  position: absolute;
+  width: 12.5rem;
+}
+
+.lettuce {
+  position: absolute;
+  width: 15rem;
 }
