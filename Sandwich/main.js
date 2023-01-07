@@ -15,6 +15,6 @@ function mouseDown(e) {
 
 function move(e) {
   if (!target) return;
-  target.style.top = e.clientY + 'px';
-  target.style.left = e.clientX + 'px';
+  target.style.top = e.clientY - 80 + 'px';
+  target.style.left = e.clientX - 80 + 'px';
 }
