@@ -5,9 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Sandwich</title>
 </head>
 <body>
+  <header class="header">
+    <h1>Build a sandwich!</h1>
+  </header>
+  <div class="navbar">
+    <h1 class="nav-header">Add Items:</h1>
+    <div class="nav-container flex just-even">
+      <div class="bread-container flex wrap just-even">
+        <div class="bread-icon"></div>
+        <button class="add-bread">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-bread">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="cheese-container flex wrap just-even">
+        <div class="cheese-icon"></div>
+        <button class="add-cheese">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-cheese">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="lettuce-container flex wrap just-even">
+        <div class="lettuce-icon"></div>
+        <button class="add-lettuce">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-lettuce">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="tomato-container flex wrap just-even">
+        <div class="tomato-icon"></div>
+        <button class="add-tomato">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-tomato">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
   <div id="container">
     <img class="bread" src="images/bread.png" draggable="false">
     <img class="cheese" src="images/cheese.png" draggable="false">

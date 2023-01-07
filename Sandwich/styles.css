@@ -6,6 +6,11 @@ body {
   margin: 0;
 }
 
+button {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
 .bread {
   position: absolute;
   width: 20rem;
@@ -24,4 +29,54 @@ body {
 .lettuce {
   position: absolute;
   width: 15rem;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-header {
+  text-align: center;
+  width: 100%;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+.bread-icon {
+  flex-basis: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("images/bread.png");
+}
+
+.cheese-icon {
+  flex-basis: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("images/cheese.png");
+}
+
+.lettuce-icon {
+  flex-basis: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("images/lettuce.png");
+}
+
+.tomato-icon {
+  flex-basis: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("images/tomato.png");
 }
