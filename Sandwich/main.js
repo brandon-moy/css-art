@@ -9,7 +9,7 @@ window.addEventListener('mousedown', mouseDown);
 window.addEventListener('mouseup', mouseUp);
 window.addEventListener('mousemove', move);
 
-$navbar.addEventListener('click', addComponent);
+$navbar.addEventListener('click', modifyComponent);
 function mouseUp() {
   target = null;
   offset = [];
@@ -27,16 +27,26 @@ function move(e) {
   target.style.left = e.clientX - offset[0] + 'px';
 }
 
-function addComponent(e) {
+function modifyComponent(e) {
   let component = '';
+  let type = '';
   if (e.target.tagName === 'BUTTON') {
     component = e.target.getAttribute('data-id');
+    type = e.target.getAttribute('data-button');
   } else if (e.target.tagName === 'I') {
     component = e.target.closest('button').getAttribute('data-id');
+    type = e.target.closest('button').getAttribute('data-button');
   } else {
     return;
   }
-  $container.appendChild(generateComponent(component));
+
+  if (type === 'add') {
+    $container.appendChild(generateComponent(component));
+  } else {
+    const $components = $container.getElementsByClassName(component);
+    const end = $components.length - 1;
+    $container.removeChild($components[end]);
+  }
 }
 
 function generateComponent(type) {
