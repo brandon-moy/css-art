@@ -38,7 +38,8 @@ button {
 .cheese,
 .tomato,
 .lettuce,
-.bacon {
+.bacon,
+.cucumber {
   position: absolute;
 }
 
@@ -60,6 +61,10 @@ button {
 
 .bacon {
   width: 10rem;
+}
+
+.cucumber {
+  width: 5rem;
 }
 
 .header {
@@ -104,7 +109,8 @@ button {
 .cheese-container,
 .lettuce-container,
 .tomato-container,
-.bacon-container {
+.bacon-container,
+.cucumber-container {
   width: 7.5rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -127,7 +133,8 @@ button {
 .cheese-icon,
 .lettuce-icon,
 .tomato-icon,
-.bacon-icon {
+.bacon-icon,
+.cucumber-icon {
   flex-basis: 100%;
   aspect-ratio: 1 / 1;
   background-size: contain;
@@ -153,4 +160,8 @@ button {
 
 .bacon-icon {
   background-image: url("images/bacon.png");
+}
+
+.cucumber-icon {
+  background-image: url("images/cucumber.png");
 }
