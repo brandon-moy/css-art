@@ -176,3 +176,17 @@ button {
 .pickle-icon {
   background-image: url("images/pickle.png");
 }
+
+@media (hover: hover) {
+  button:hover {
+    cursor: pointer;
+  }
+
+  img:hover {
+    cursor: grab;
+  }
+
+  img:active {
+    cursor: grabbing;
+  }
+}
