@@ -34,24 +34,32 @@ button {
   border-radius: 50%;
 }
 
-.bread {
+.bread,
+.cheese,
+.tomato,
+.lettuce,
+.bacon {
   position: absolute;
+}
+
+.bread {
   width: 20rem;
 }
 
 .cheese {
-  position: absolute;
   width: 10rem;
 }
 
 .tomato {
-  position: absolute;
   width: 12.5rem;
 }
 
 .lettuce {
-  position: absolute;
   width: 15rem;
+}
+
+.bacon {
+  width: 10rem;
 }
 
 .header {
@@ -95,7 +103,8 @@ button {
 .bread-container,
 .cheese-container,
 .lettuce-container,
-.tomato-container {
+.tomato-container,
+.bacon-container {
   width: 7.5rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -114,38 +123,34 @@ button {
     );
 }
 
-.bread-icon {
+.bread-icon,
+.cheese-icon,
+.lettuce-icon,
+.tomato-icon,
+.bacon-icon {
   flex-basis: 100%;
   aspect-ratio: 1 / 1;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.bread-icon {
   background-image: url("images/bread.png");
 }
 
 .cheese-icon {
-  flex-basis: 100%;
-  aspect-ratio: 1 / 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("images/cheese.png");
 }
 
 .lettuce-icon {
-  flex-basis: 100%;
-  aspect-ratio: 1 / 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("images/lettuce.png");
 }
 
 .tomato-icon {
-  flex-basis: 100%;
-  aspect-ratio: 1 / 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("images/tomato.png");
+}
+
+.bacon-icon {
+  background-image: url("images/bacon.png");
 }
