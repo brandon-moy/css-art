@@ -35,15 +35,17 @@ button {
   border-radius: 50%;
 }
 
-.header {
-  width: 100%;
-  font-size: 1.25rem;
+.header-text {
+  font-size: 4rem;
+  font-family: Caveat, sans-serif;
   text-align: center;
+  margin: 1rem auto;
 }
 
 .nav-header {
   text-align: center;
   width: 100%;
+  font-family: "Indie Flower", sans-serif;
 }
 
 .nav-container {
@@ -171,7 +173,7 @@ button {
     );
   position: absolute;
   left: 50%;
-  bottom: 10%;
+  bottom: 5%;
   transform: translateX(-50%);
   width: 20rem;
   border-radius: 50%;
