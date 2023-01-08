@@ -39,7 +39,8 @@ button {
 .tomato,
 .lettuce,
 .bacon,
-.cucumber {
+.cucumber,
+.pickle {
   position: absolute;
 }
 
@@ -65,6 +66,10 @@ button {
 
 .cucumber {
   width: 5rem;
+}
+
+.pickle {
+  width: 3.5rem;
 }
 
 .header {
@@ -110,7 +115,8 @@ button {
 .lettuce-container,
 .tomato-container,
 .bacon-container,
-.cucumber-container {
+.cucumber-container,
+.pickle-container {
   width: 7.5rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -134,7 +140,8 @@ button {
 .lettuce-icon,
 .tomato-icon,
 .bacon-icon,
-.cucumber-icon {
+.cucumber-icon,
+.pickle-icon {
   flex-basis: 100%;
   aspect-ratio: 1 / 1;
   background-size: contain;
@@ -164,4 +171,8 @@ button {
 
 .cucumber-icon {
   background-image: url("images/cucumber.png");
+}
+
+.pickle-icon {
+  background-image: url("images/pickle.png");
 }
