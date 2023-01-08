@@ -3,6 +3,7 @@
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   font-family: sans-serif;
   background-image:
@@ -34,71 +35,10 @@ button {
   border-radius: 50%;
 }
 
-.bread,
-.cheese,
-.tomato,
-.lettuce,
-.bacon,
-.cucumber,
-.pickle {
-  position: absolute;
-}
-
-.bread {
-  width: 12.5rem;
-}
-
-.cheese {
-  width: 10rem;
-}
-
-.tomato {
-  width: 12.5rem;
-}
-
-.lettuce {
-  width: 15rem;
-}
-
-.bacon {
-  width: 10rem;
-}
-
-.cucumber {
-  width: 5rem;
-}
-
-.pickle {
-  width: 3.5rem;
-}
-
 .header {
   width: 100%;
   font-size: 1.25rem;
   text-align: center;
-}
-
-.plate {
-  background:
-    radial-gradient(
-      rgb(74 255 167),
-      rgb(20 227 127) 50%,
-      rgb(193 255 228) 50%,
-      rgb(193 255 228) 52%,
-      rgb(36 255 149) 52%,
-      rgb(14 199 109) 58%,
-      rgb(193 255 228) 58%,
-      rgb(193 255 228) 60%,
-      rgb(8 255 136) 60%,
-      rgb(16 141 80)
-    );
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
-  transform: translateX(-50%);
-  width: 20rem;
-  border-radius: 50%;
-  aspect-ratio: 1 / 1;
 }
 
 .nav-header {
@@ -175,6 +115,67 @@ button {
 
 .pickle-icon {
   background-image: url("images/pickle.png");
+}
+
+.bread,
+.cheese,
+.tomato,
+.lettuce,
+.bacon,
+.cucumber,
+.pickle {
+  position: absolute;
+}
+
+.bread {
+  width: 12.5rem;
+}
+
+.cheese {
+  width: 10rem;
+}
+
+.tomato {
+  width: 12.5rem;
+}
+
+.lettuce {
+  width: 15rem;
+}
+
+.bacon {
+  width: 10rem;
+}
+
+.cucumber {
+  width: 5rem;
+}
+
+.pickle {
+  width: 3.5rem;
+}
+
+.plate {
+  background:
+    radial-gradient(
+      rgb(74 255 167),
+      rgb(20 227 127) 50%,
+      rgb(193 255 228) 50%,
+      rgb(193 255 228) 52%,
+      rgb(36 255 149) 52%,
+      rgb(14 199 109) 58%,
+      rgb(193 255 228) 58%,
+      rgb(193 255 228) 60%,
+      rgb(8 255 136) 60%,
+      rgb(16 141 80)
+    );
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  width: 20rem;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
 }
 
 @media (hover: hover) {
