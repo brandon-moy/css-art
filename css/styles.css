@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  background: #5b9279;
 }
 
 header {
@@ -8,7 +9,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: chartreuse;
 }
 
 .header-text {
@@ -29,8 +29,8 @@ header {
 .image {
   width: 45vmin;
   height: 60vh;
-  background: chartreuse;
   border-radius: 150px;
+  filter: brightness(80%);
 }
 
 .image:nth-child(1) {
@@ -66,6 +66,11 @@ header {
 .image:nth-child(7) {
   background-image: url("/images/sandwich.gif");
   background-size: contain;
+}
+
+.image:hover {
+  filter: brightness(100%);
+  transition: filter 1s ease-out;
 }
 
 @media (hover: hover) {
