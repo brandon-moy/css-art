@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  background: #5b9279;
+  background: #487561;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
@@ -8,13 +8,24 @@ header {
   width: 100%;
   height: 20vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .header-text {
   font-size: 4rem;
+  flex-basis: 100%;
   text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.by-me {
+  font-family: Yomogi, sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
 }
 
 .track {
@@ -92,7 +103,7 @@ header {
 }
 
 .image:hover {
-  filter: brightness(100%);
+  filter: brightness(105%);
 }
 
 @media (hover: hover) {
@@ -112,6 +123,10 @@ header {
 @media only screen and (min-width: 768px) {
   .image {
     width: 30vmin;
+  }
+
+  .by-me {
+    font-size: 1.5rem;
   }
 }
 
