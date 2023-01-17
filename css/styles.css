@@ -13,8 +13,8 @@ header {
 }
 
 .header-text {
-  font-size: 2rem;
-  margin: 0;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .track {
@@ -112,5 +112,11 @@ header {
 @media only screen and (min-width: 768px) {
   .image {
     width: 30vmin;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header-text {
+    font-size: 8rem;
   }
 }
