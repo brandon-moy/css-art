@@ -1,0 +1,21 @@
+body {
+  overflow-x: hidden;
+}
+
+.track {
+  display: flex;
+}
+
+@media (hover: hover) {
+  a:hover {
+    cursor: pointer;
+  }
+
+  .track:hover {
+    cursor: grab;
+  }
+
+  .track:active {
+    cursor: grabbing;
+  }
+}
