@@ -19,6 +19,7 @@ header {
   text-align: center;
   color: white;
   margin: 0;
+  border-bottom: 4px solid white;
 }
 
 .by-me {
