@@ -4,6 +4,7 @@
   "private": true,
   "description": "Vanilla HTML, CSS, and JavaScript art code.",
   "scripts": {
+    "start": "node main.js",
     "prepare": "husky install"
   },
   "devDependencies": {
