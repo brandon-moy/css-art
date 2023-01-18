@@ -4,7 +4,7 @@
   "private": true,
   "description": "Vanilla HTML, CSS, and JavaScript art code.",
   "scripts": {
-    "start": "NODE_ENV=production node main.js",
+    "start": "NODE_ENV=production node .",
     "prepare": "husky install"
   },
   "devDependencies": {
