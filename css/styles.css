@@ -54,31 +54,31 @@ header {
 }
 
 .image:nth-child(1) {
-  background-image: url("../images/cube.gif");
+  background-image: url("/images/cube.gif");
 }
 
 .image:nth-child(2) {
-  background-image: url("../images/webpack.gif");
+  background-image: url("/images/webpack.gif");
 }
 
 .image:nth-child(3) {
-  background-image: url("../images/pyramid.gif");
+  background-image: url("/images/pyramid.gif");
 }
 
 .image:nth-child(4) {
-  background-image: url("../images/airplane.gif");
+  background-image: url("/images/airplane.gif");
 }
 
 .image:nth-child(5) {
-  background-image: url("../images/fries.gif");
+  background-image: url("/images/fries.gif");
 }
 
 .image:nth-child(6) {
-  background-image: url("../images/compass.gif");
+  background-image: url("/images/compass.gif");
 }
 
 .image:nth-child(7) {
-  background-image: url("../images/sandwich.gif");
+  background-image: url("/images/sandwich.gif");
 }
 
 .art-title,

@@ -1,6 +1,7 @@
 {
   "excludeFiles": [
-    "**/node_modules/**"
+    "**/node_modules/**",
+    "_site/**/*.html"
   ],
   "rules": {
     "attr-duplication": true,
