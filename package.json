@@ -4,6 +4,7 @@
   "private": true,
   "description": "Code exercise solutions.",
   "scripts": {
+    "start": "NODE_ENV=production node .",
     "prepare": "husky install"
   },
   "devDependencies": {
