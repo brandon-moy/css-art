@@ -1,7 +1,5 @@
 const $cube = document.querySelector('.cube');
 const $cube2 = document.querySelector('.cube2');
-const $start = document.querySelector('.start');
-const $stop = document.querySelector('.stop');
 const $cubeFaceTop = document.querySelector('.cube-face-top');
 const $cubeFaceBottom = document.querySelector('.cube-face-bottom');
 const $cubeFaceFront = document.querySelector('.cube-face-front');
@@ -46,14 +44,10 @@ function rotate() {
   }, 3000);
 }
 
-$stop.addEventListener('click', () => {
-  clearInterval(intervalId);
-  clearInterval(borderIntervalId);
-  intervalId = null;
-  borderIntervalId = null;
-});
-
-$start.addEventListener('click', rotate);
-
 rotate();
 borderSet();
+
+window.addEventListener('beforeunload', () => {
+  clearInterval(intervalId);
+  clearInterval(borderIntervalId);
+});
