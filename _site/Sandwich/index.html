@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Indie+Flower&display=swap" rel="stylesheet">
+  <title>Sandwich Simulator</title>
+</head>
+<body>
+  <header>
+    <h1 class="header-text">Build a sandwich!</h1>
+  </header>
+  <div class="navbar">
+    <h1 class="nav-header">Add Items:</h1>
+    <div class="nav-container flex just-even">
+      <div class="bread-container flex wrap just-even">
+        <div class="bread-icon"></div>
+        <button class="add-bread" data-id="bread" data-button="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-bread" data-id="bread" data-button="remove">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="cheese-container flex wrap just-even">
+        <div class="cheese-icon"></div>
+        <button class="add-cheese" data-id="cheese" data-button="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-cheese" data-id="cheese" data-button="remove">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="bacon-container flex wrap just-even">
+        <div class="bacon-icon"></div>
+        <button class="add-bacon" data-id="bacon" data-button="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-bacon" data-id="bacon" data-button="remove">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="lettuce-container flex wrap just-even">
+        <div class="lettuce-icon"></div>
+        <button class="add-lettuce" data-id="lettuce" data-button="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-lettuce" data-id="lettuce" data-button="remove">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="tomato-container flex wrap just-even">
+        <div class="tomato-icon"></div>
+        <button class="add-tomato" data-id="tomato" data-button="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-tomato" data-id="tomato" data-button="remove">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="cucumber-container flex wrap just-even">
+        <div class="cucumber-icon"></div>
+        <button class="add-cucumber" data-id="cucumber" data-button="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-cucumber" data-id="cucumber" data-button="remove">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="pickle-container flex wrap just-even">
+        <div class="pickle-icon"></div>
+        <button class="add-pickle" data-id="pickle" data-button="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="remove-pickle" data-id="pickle" data-button="remove">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container"></div>
+  <div class="plate"></div>
+  <script src="main.js"></script>
+</body>
+</html>
