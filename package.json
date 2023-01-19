@@ -4,10 +4,11 @@
   "private": true,
   "description": "Vanilla HTML, CSS, and JavaScript art code.",
   "scripts": {
-    "start": "NODE_ENV=production node .",
+    "build": "npx @11ty/eleventy",
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
     "eslint": "^8.25.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-html": "^7.1.0",
