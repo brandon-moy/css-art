@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Vanilla HTML, CSS, and JavaScript art code.",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "prepare": "husky install",
-    "start": "node server/index.js"
+    "start": "NODE_ENV=production node ."
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
