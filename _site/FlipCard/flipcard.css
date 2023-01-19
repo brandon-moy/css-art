@@ -1,0 +1,84 @@
+.scene {
+  margin: 60vh auto;
+  width: 200px;
+  height: 260px;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform-origin: top;
+}
+
+/* transform-origin tells what the starting position should be for
+ the transform (top left moves to the top left corner, center is center. . . */
+
+.card-face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+/* backface-visibility: hidden hides the backside  of the card so that we only
+see the front side of the card. If this is not here then the backside overtakes
+the front side and when the card is flipped it only goes from backside facing
+back to backside facing front */
+
+.card-face-front {
+  background-color: red;
+}
+
+.card-face-back {
+  background-color: blue;
+  transform: rotateY(180deg);
+}
+
+/* having this transform pushed this as the backside of the card */
+
+.card.is-flipped {
+  /* transform: rotateX(180deg) translateY(50%); */
+  animation: flip-to-back 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+.card.recycled {
+  animation: recycle 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+/* this transform is what flips the card and moves it "in place" due to the
+transform-origin we pair it with translateX so that it stays in the same
+position */
+
+@keyframes flip-to-back {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: rotateX(180deg) translateY(50%);
+  }
+}
+
+@keyframes recycle {
+  from {
+    transform: rotateX(180deg) translateY(50%);
+  }
+
+  to {
+    transform: translateY(100%) translateX(-100%) rotateX(180deg);
+  }
+}
