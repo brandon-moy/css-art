@@ -1,8 +1,4 @@
 {
-  "excludeFiles": [
-    "**/node_modules/**",
-    "_site/**/*.html"
-  ],
   "rules": {
     "attr-duplication": true,
     "character-reference": true,
@@ -26,6 +22,13 @@
     "indentation": 2
   },
   "nodeRules": [
+    {
+      "selector": "meta",
+      "rules": {
+        "invalid-attr": false,
+        "required-attr": false
+      }
+    },
     {
       "selector": "link",
       "rules": {
