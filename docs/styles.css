@@ -43,7 +43,7 @@ header {
   gap: 4vmin;
   position: absolute;
   left: 50%;
-  bottom: 10%;
+  bottom: 5%;
   transform: translateX(0%);
   user-select: none;
 }
@@ -134,6 +134,10 @@ header {
 @media only screen and (min-width: 1280px) {
   .header-text {
     font-size: 8rem;
+  }
+
+  .track {
+    bottom: 10%;
   }
 
   .image {
