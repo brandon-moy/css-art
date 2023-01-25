@@ -1,9 +1,4 @@
-html {
-  overflow-x: hidden;
-}
-
 body {
-  overflow-x: hidden;
   background: #558a72;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
@@ -38,6 +33,11 @@ header {
   margin: 0;
 }
 
+.track-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .track {
   display: flex;
   gap: 4vmin;
@@ -46,7 +46,6 @@ header {
   bottom: 5%;
   transform: translateX(0%);
   user-select: none;
-  overflow-x: hidden;
 }
 
 .image {
