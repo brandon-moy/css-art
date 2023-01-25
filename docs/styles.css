@@ -1,6 +1,5 @@
 body {
-  overflow-x: hidden;
-  width: 100%;
+  overflow: hidden;
   background: #558a72;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
