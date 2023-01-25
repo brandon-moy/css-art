@@ -5,9 +5,8 @@
   "description": "Vanilla HTML, CSS, and JavaScript art code.",
   "main": "server/index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
     "prepare": "husky install",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "NODE_ENV=production node ."
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",

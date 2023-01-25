@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-const directory = path.join(__dirname, '../_site');
+const directory = path.join(__dirname, 'public');
 
 const mountStatic = express.static(directory);
 
