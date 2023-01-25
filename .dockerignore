@@ -1,0 +1,14 @@
+.dockerignore
+README.md
+Airplane/
+Button/
+Cubes/
+FlipCard/
+Fries/
+Pyramid/
+Sandwich/
+SVBingo/
+SVCompass/
+Testing/
+Transforms/
+Triangle/
