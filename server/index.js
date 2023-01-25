@@ -1,13 +1,9 @@
 const express = require('express');
-const path = require('path');
+const staticMiddleware = require('./static-middleware');
 
 const app = express();
 
-const directory = path.join(__dirname, 'public');
-
-const mountStatic = express.static(directory);
-
-app.use(mountStatic);
+app.use(staticMiddleware);
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
