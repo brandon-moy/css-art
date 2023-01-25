@@ -1,4 +1,6 @@
 body {
+  overflow-x: hidden;
+  width: 100%;
   background: #558a72;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
@@ -31,11 +33,6 @@ header {
   font-family: Yomogi, sans-serif;
   font-size: 1rem;
   margin: 0;
-}
-
-.track-container {
-  width: 100%;
-  overflow-x: hidden;
 }
 
 .track {
