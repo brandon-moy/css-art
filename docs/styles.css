@@ -1,37 +1,14 @@
-body {
-  overflow: hidden;
+.body {
   background: #558a72;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.text-black {
-  color: black;
-}
-
-.text-white {
-  color: white;
-}
-
-.header-text {
+.font-size-8 {
   font-size: 4rem;
-  flex-basis: 100%;
-  text-align: center;
-  margin: 0;
-  border-bottom: 4px solid white;
 }
 
-.by-me {
+.font-yomogi {
   font-family: Yomogi, sans-serif;
-  font-size: 1rem;
-  margin: 0;
 }
 
 .track {
@@ -121,14 +98,10 @@ header {
   .image {
     width: 30vmin;
   }
-
-  .by-me {
-    font-size: 1.5rem;
-  }
 }
 
 @media only screen and (min-width: 1280px) {
-  .header-text {
+  .font-size-8 {
     font-size: 8rem;
   }
 
