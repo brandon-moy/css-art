@@ -76,6 +76,11 @@
   bottom: 5%;
 }
 
+.vertical {
+  height: 300px;
+  object-fit: cover;
+}
+
 @media (hover: hover) {
   a:hover {
     cursor: pointer;
