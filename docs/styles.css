@@ -1,4 +1,5 @@
 .body {
+  overflow-x: hidden;
   background: #558a72;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
@@ -11,14 +12,15 @@
   font-family: Yomogi, sans-serif;
 }
 
+.bg-green {
+  background-color: #ccedde !important;
+}
+
 .track {
-  display: flex;
   gap: 4vmin;
   position: absolute;
-  left: 50%;
   bottom: 5%;
-  transform: translateX(0%);
-  user-select: none;
+  left: 5%;
 }
 
 .image {
@@ -74,11 +76,6 @@
 
 .sub-title {
   bottom: 5%;
-}
-
-.vertical {
-  height: 300px;
-  object-fit: cover;
 }
 
 @media (hover: hover) {
