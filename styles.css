@@ -10,11 +10,9 @@ header {
 }
 
 img {
-  z-index: 1;
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  object-position: center;
   filter: brightness(80%);
 }
 
@@ -60,14 +58,12 @@ h2 {
 
 .img-slider {
   position: relative;
-  width: 100%;
   height: 100vh;
 }
 
 .slide {
   position: absolute;
   width: 100%;
-  height: 100vh;
   clip-path: circle(0% at 0 50%);
 }
 
@@ -92,7 +88,7 @@ h2 {
 }
 
 .btn {
-  background: rgb(214 214 214 / 50%);
+  background: rgb(119 119 119 / 50%);
   width: 24px;
   height: 24px;
   margin: 10px;
@@ -100,7 +96,7 @@ h2 {
 }
 
 .btn.active {
-  background: #43b481;
+  background: #7ce6b6;
   box-shadow: 0 0 2px rgb(0 0 0 / 50%);
 }
 
@@ -142,9 +138,9 @@ h2 {
   }
 
   .btn {
-    background: rgb(176 176 176 / 50%);
-    width: 12px;
-    height: 12px;
+    background: rgb(102 102 102 / 50%);
+    width: 16px;
+    height: 16px;
   }
 }
 

@@ -41,7 +41,7 @@ const repeat = () => {
     if (slides.length === currentSlide) {
       currentSlide = 0;
     }
-  }, 2000);
+  }, 5000);
 };
 
 repeat();
