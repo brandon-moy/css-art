@@ -82,7 +82,7 @@ h2 {
 .navigation {
   position: absolute;
   display: flex;
-  bottom: 30px;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
