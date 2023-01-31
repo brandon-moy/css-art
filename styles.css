@@ -58,68 +58,6 @@ h2 {
   margin: 0;
 }
 
-/* .track {
-  gap: 4vmin;
-  position: absolute;
-  bottom: 5%;
-  left: 2.5%;
-}
-
-.image {
-  position: relative;
-  width: 45vmin;
-  height: 60vh;
-  border-radius: 150px;
-  background-position: center;
-  background-size: cover;
-}
-
-.image:nth-child(1) {
-  background-image: url("../images/cube.gif");
-}
-
-.image:nth-child(2) {
-  background-image: url("../images/webpack.gif");
-}
-
-.image:nth-child(3) {
-  background-image: url("../images/pyramid.gif");
-}
-
-.image:nth-child(4) {
-  background-image: url("../images/airplane.gif");
-}
-
-.image:nth-child(5) {
-  background-image: url("../images/fries.gif");
-}
-
-.image:nth-child(6) {
-  background-image: url("../images/compass.gif");
-}
-
-.image:nth-child(7) {
-  background-image: url("../images/sandwich.gif");
-}
-
-.art-title,
-.sub-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.art-title {
-  bottom: 15%;
-  font-weight: 800;
-  font-size: 1.25rem;
-}
-
-.sub-title {
-  bottom: 5%;
-} */
-
 .img-slider {
   position: relative;
   width: 100%;
@@ -215,32 +153,4 @@ h2 {
   .btn:hover {
     cursor: pointer;
   }
-
-  /* .track:hover {
-    cursor: grab;
-  }
-
-  .track:active {
-    cursor: grabbing;
-  }
-
-  .image:hover {
-    filter: brightness(105%);
-  } */
 }
-
-/*
-@media only screen and (min-width: 768px) {
-  .image {
-    width: 30vmin;
-  }
-} */
-
-/* .track {
-    bottom: 10%;
-  }
-
-  .image {
-    filter: brightness(80%);
-    transition: filter 0.5s ease-out;
-  } */
