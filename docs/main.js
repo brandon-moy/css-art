@@ -1,39 +1,47 @@
-const track = document.querySelector('.track');
+const slides = document.querySelectorAll('.slide');
+const btns = document.querySelectorAll('.btn');
+const active = document.getElementsByClassName('active');
+let currentSlide = 1;
+let intervalId = null;
 
-const handleOnDown = e => {
-  track.dataset.mouseDownAt = e.clientX;
+const manualNav = function (manual) {
+  slides.forEach(slide => {
+    slide.classList.remove('active');
+
+    btns.forEach(btn => {
+      btn.classList.remove('active');
+    });
+  });
+
+  slides[manual].classList.add('active');
+  btns[manual].classList.add('active');
 };
 
-const handleOnUp = () => {
-  track.dataset.mouseDownAt = '0';
-  track.dataset.prevPercentage = track.dataset.percentage;
+btns.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    clearInterval(intervalId);
+    intervalId = null;
+    manualNav(i);
+    currentSlide = i;
+    repeat();
+  });
+});
+
+const repeat = () => {
+
+  intervalId = setInterval(() => {
+    [...active].forEach(activeSlide => {
+      activeSlide.classList.remove('active');
+    });
+
+    slides[currentSlide].classList.add('active');
+    btns[currentSlide].classList.add('active');
+    currentSlide++;
+
+    if (slides.length === currentSlide) {
+      currentSlide = 0;
+    }
+  }, 5000);
 };
 
-const handleOnMove = e => {
-  if (track.dataset.mouseDownAt === '0') return;
-
-  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
-  const maxDelta = window.innerWidth / 2;
-
-  const percentage = (mouseDelta / maxDelta) * -100;
-  const nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage;
-  const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-
-  track.dataset.percentage = nextPercentage;
-
-  track.animate({
-    transform: `translateX(${nextPercentage}%)`
-  }, { duration: 1200, fill: 'forwards' });
-};
-
-window.onmousedown = e => handleOnDown(e);
-
-window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-window.onmouseup = e => handleOnUp(e);
-
-window.ontouchend = e => handleOnUp(e.touches[0]);
-
-window.onmousemove = e => handleOnMove(e);
-
-window.ontouchmove = e => handleOnMove(e.touches[0]);
+repeat();
