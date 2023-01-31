@@ -1,9 +1,9 @@
 const slides = document.querySelectorAll('.slide');
 const btns = document.querySelectorAll('.btn');
-// eslint-disable-next-line
+const active = document.getElementsByClassName('active');
 let currentSlide = 1;
+let intervalId = null;
 
-// Javascript for image slider manual navigation
 const manualNav = function (manual) {
   slides.forEach(slide => {
     slide.classList.remove('active');
@@ -19,35 +19,29 @@ const manualNav = function (manual) {
 
 btns.forEach((btn, i) => {
   btn.addEventListener('click', () => {
+    clearInterval(intervalId);
+    intervalId = null;
     manualNav(i);
     currentSlide = i;
+    repeat();
   });
 });
 
-// Javascript for image slider autoplay navigation
-const repeat = function (activeClass) {
-  const active = document.getElementsByClassName('active');
-  let i = 1;
+const repeat = () => {
 
-  const repeater = () => {
-    setTimeout(function () {
-      [...active].forEach(activeSlide => {
-        activeSlide.classList.remove('active');
-      });
+  intervalId = setInterval(() => {
+    [...active].forEach(activeSlide => {
+      activeSlide.classList.remove('active');
+    });
 
-      slides[i].classList.add('active');
-      btns[i].classList.add('active');
-      i++;
+    slides[currentSlide].classList.add('active');
+    btns[currentSlide].classList.add('active');
+    currentSlide++;
 
-      if (slides.length === i) {
-        i = 0;
-      }
-      if (i >= slides.length) {
-        return;
-      }
-      repeater();
-    }, 10000);
-  };
-  repeater();
+    if (slides.length === currentSlide) {
+      currentSlide = 0;
+    }
+  }, 2000);
 };
+
 repeat();
