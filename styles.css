@@ -42,31 +42,16 @@
   font-size: 4rem;
 }
 
-.pent-sneakers {
-  top: 6rem;
-  left: 8rem;
-}
-
 .pent-sneakers-img {
   width: 20%;
   top: 14rem;
   left: 27rem;
 }
 
-.pent-sandals {
-  top: 6rem;
-  left: 8rem;
-}
-
 .pent-sandals-img {
   width: 17%;
   top: 15rem;
   left: 25rem;
-}
-
-.pent-heels {
-  top: 6rem;
-  left: 10rem;
 }
 
 .pent-img {
@@ -103,6 +88,15 @@
   width: 600px;
 }
 
+.prod-carousel {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 400px;
+  z-index: 5;
+  padding-left: 4rem;
+}
+
 .slides {
   display: flex;
   overflow-x: auto;
@@ -111,24 +105,18 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.prod-carousel > .slides {
+  /* transform: translateX(400px); */
+}
+
 .slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-  background: lightgray;
-  border-radius: 10px;
-}
-
-.slides::-webkit-scrollbar-track {
-  background: transparent;
+  display: none;
 }
 
 .slides > div {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 600px;
+  width: 100%;
   height: 400px;
   margin-right: 50px;
   border-radius: 10px;
