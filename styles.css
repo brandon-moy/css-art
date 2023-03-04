@@ -42,3 +42,80 @@
   margin: 0;
   padding-top: 0.25rem;
 }
+
+.carousel {
+  overflow: hidden;
+  margin: 2rem auto;
+  width: 600px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 600px;
+  height: 400px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: lightgray;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: felative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.shoe-style {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
+
+.shoe-img {
+  width: 25%;
+  object-fit: contain;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1.5) rotate(-10deg);
+  }
+
+  10% {
+    transform: scale(1.5) rotate(-5deg);
+  }
+
+  80% {
+    transform: scale(1.5) rotate(60deg);
+  }
+}
