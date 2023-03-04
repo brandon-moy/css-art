@@ -10,10 +10,10 @@ let rotations = -15;
 function slide() {
   if (position === 0) {
     $prodSlides.scrollLeft -= 800;
-    $carouselSlides.scrollLeft -= 800;
+    $carouselSlides.scrollLeft -= 1200;
   } else {
     $prodSlides.scrollLeft += 400;
-    $carouselSlides.scrollLeft += 400;
+    $carouselSlides.scrollLeft += 600;
   }
 }
 
