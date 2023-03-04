@@ -21,7 +21,7 @@
 .pentagon {
   fill: var(--yellow);
   transform: scale(1.5) rotate(-10deg);
-  transition: transform 3s cubic-bezier(0.1, -0.71, 0.46, 0.51);
+  transition: transform 1s cubic-bezier(0.1, -0.71, 0.46, 0.51);
   position: relative;
   top: -10rem;
   left: -8rem;
@@ -103,10 +103,6 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-}
-
-.prod-carousel > .slides {
-  /* transform: translateX(400px); */
 }
 
 .slides::-webkit-scrollbar {
