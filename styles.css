@@ -1,3 +1,10 @@
+:root {
+  --yellow: #e3b816;
+  --green: #93b77e;
+  --purple: #a09cc0;
+  --pink: #df94a6;
+}
+
 .container {
   display: flex;
 }
@@ -14,5 +21,9 @@
 }
 
 .pentagon {
-  fill: black;
+  fill: var(--yellow);
+  transform: scale(1.5) rotate(-10deg);
+  position: relative;
+  top: -10rem;
+  left: -8rem;
 }
