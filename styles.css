@@ -26,6 +26,59 @@
   left: -8rem;
 }
 
+.set {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}
+
+.pent-title {
+  position: absolute;
+  font-family: "Tilt Warp", sans-serif;
+  font-size: 4rem;
+}
+
+.pent-sneakers {
+  top: 6rem;
+  left: 8rem;
+}
+
+.pent-sneakers-img {
+  width: 20%;
+  top: 14rem;
+  left: 27rem;
+}
+
+.pent-sandals {
+  top: 6rem;
+  left: 8rem;
+}
+
+.pent-sandals-img {
+  width: 17%;
+  top: 15rem;
+  left: 25rem;
+}
+
+.pent-heels {
+  top: 6rem;
+  left: 10rem;
+}
+
+.pent-img {
+  position: absolute;
+  transform: rotate(30deg);
+}
+
+.pent-heels-img {
+  width: 15%;
+  top: 12.5rem;
+  left: 25rem;
+}
+
 .titles {
   padding: 2rem;
 }
