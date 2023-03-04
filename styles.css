@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+}
+
+.col-4 {
+  flex-basis: 40%;
+  background: grey;
+  height: 100vh;
+}
+
+.col-6 {
+  flex-basis: 60%;
+  background: black;
+}
+
+.pentagon {
+  fill: black;
+}
