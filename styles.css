@@ -32,12 +32,8 @@
   height: 550px;
   position: absolute;
   top: 0;
-
-  /* transform: translate(-250px, -50px) rotate(120deg); */
-  transform: translate(-150px, -100px) rotate(240deg);
+  animation: changeshoes 15s ease-in-out infinite;
 }
-
-/* transform: translate(-250px, -50px) rotate(120deg); */
 
 .pent-title {
   position: absolute;
@@ -148,4 +144,34 @@
 .shoe-img {
   width: var(--size);
   object-fit: contain;
+}
+
+@keyframes changeshoes {
+  0% {
+    transform: translate(0) rotate(0);
+  }
+
+  5% {
+    transform: translate(0) rotate(5deg);
+  }
+
+  33% {
+    transform: translate(-250px, -50px) rotate(120deg);
+  }
+
+  38% {
+    transform: translate(-250px, -50px) rotate(125deg);
+  }
+
+  66% {
+    transform: translate(-150px, -100px) rotate(240deg);
+  }
+
+  71% {
+    transform: translate(-150px, -100px) rotate(245deg);
+  }
+
+  100% {
+    transform: translate(0) rotate(360deg);
+  }
 }
