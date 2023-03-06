@@ -27,14 +27,17 @@
   left: -8rem;
 }
 
-.set {
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
+.shoe-container {
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  top: 0;
+
+  /* transform: translate(-250px, -50px) rotate(120deg); */
+  transform: translate(-150px, -100px) rotate(240deg);
 }
 
-.active {
-  opacity: 1;
-}
+/* transform: translate(-250px, -50px) rotate(120deg); */
 
 .pent-title {
   position: absolute;
@@ -44,26 +47,28 @@
 }
 
 .pent-sneakers-img {
-  width: 20%;
-  top: 14rem;
-  left: 27rem;
+  width: 60%;
+  bottom: 200px;
+  right: -250px;
+  transform: rotateZ(30deg);
 }
 
 .pent-sandals-img {
-  width: 17%;
-  top: 15rem;
-  left: 25rem;
+  width: 50%;
+  transform: rotateZ(-90deg);
+  top: -300px;
+  left: -50px;
+}
+
+.pent-heels-img {
+  width: 45%;
+  transform: rotate(120deg);
+  bottom: -150px;
+  left: -150px;
 }
 
 .pent-img {
   position: absolute;
-  transform: rotate(30deg);
-}
-
-.pent-heels-img {
-  width: 15%;
-  top: 12.5rem;
-  left: 25rem;
 }
 
 .titles {

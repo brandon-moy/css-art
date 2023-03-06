@@ -1,4 +1,4 @@
-const $sets = document.querySelectorAll('.set');
+// const $sets = document.querySelectorAll('.set');
 const $pentagon = document.querySelector('.pentagon');
 const $prodSlides = document.querySelector('.prod-carousel > .slides');
 const $carouselSlides = document.querySelector('.carousel > .slides');
@@ -21,13 +21,13 @@ setInterval(() => {
   if (position === 3) {
     position = 0;
   }
-  for (let i = 0; i < $sets.length; i++) {
-    if (i === position) {
-      $sets[i].classList.add('active');
-    } else {
-      $sets[i].className = 'set';
-    }
-  }
+  // for (let i = 0; i < $sets.length; i++) {
+  //   if (i === position) {
+  //     $sets[i].classList.add('active');
+  //   } else {
+  //     $sets[i].className = 'set';
+  //   }
+  // }
   rotations = rotations + 72;
   slide();
   $pentagon.style.fill = colors[position];
