@@ -1,0 +1,181 @@
+:root {
+  --yellow: #e3b816;
+  --green: #93b77e;
+  --purple: #a09cc0;
+  --pink: #df94a6;
+}
+
+.container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.col-4 {
+  flex-basis: 40%;
+  height: 100vh;
+}
+
+.col-6 {
+  flex-basis: 60%;
+}
+
+.pentagon {
+  fill: var(--yellow);
+  transform: scale(1.5) rotate(-10deg);
+  transition: transform 1s cubic-bezier(0.1, -0.71, 0.46, 0.51);
+  position: relative;
+  top: -10rem;
+  left: -8rem;
+}
+
+.shoe-container {
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  top: 0;
+  transform: translate(-90px, 0);
+  animation: changeshoes 16.5s ease-in-out infinite;
+}
+
+.pent-title {
+  position: absolute;
+  font-family: "Tilt Warp", sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+
+.pent-sneakers-img {
+  width: 60%;
+  bottom: 150px;
+  right: -275px;
+  transform: rotateZ(30deg);
+}
+
+.pent-sandals-img {
+  width: 50%;
+  transform: rotateZ(-90deg);
+  top: -300px;
+  left: -50px;
+}
+
+.pent-heels-img {
+  width: 45%;
+  transform: rotate(120deg);
+  bottom: -150px;
+  left: -150px;
+}
+
+.pent-img {
+  position: absolute;
+}
+
+.titles {
+  padding: 2rem;
+}
+
+.shoe-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.product-title {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+
+.carousel {
+  overflow: hidden;
+  margin: 2rem auto;
+  width: 600px;
+}
+
+.prod-carousel {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 400px;
+  z-index: 5;
+  padding-left: 4rem;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  margin-right: 50px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: felative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+}
+
+.shoe-style {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+.shoe-img {
+  width: var(--size);
+  object-fit: contain;
+}
+
+@keyframes changeshoes {
+  0% {
+    transform: translate(-90px, 0) rotate(0deg);
+  }
+
+  5% {
+    transform: translate(-90px, 0) rotate(5deg);
+  }
+
+  33% {
+    transform: translate(-250px, -50px) rotate(120deg);
+  }
+
+  38% {
+    transform: translate(-250px, -50px) rotate(125deg);
+  }
+
+  66% {
+    transform: translate(-150px, -100px) rotate(240deg);
+  }
+
+  71% {
+    transform: translate(-150px, -100px) rotate(245deg);
+  }
+
+  100% {
+    transform: translate(-90px, 0) rotate(360deg);
+  }
+}
