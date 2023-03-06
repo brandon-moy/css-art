@@ -7,6 +7,9 @@
 
 .container {
   display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
 }
 
 .col-4 {
@@ -32,7 +35,8 @@
   height: 550px;
   position: absolute;
   top: 0;
-  animation: changeshoes 15s ease-in-out infinite;
+  transform: translate(-90px, 0);
+  animation: changeshoes 16.5s ease-in-out infinite;
 }
 
 .pent-title {
@@ -44,8 +48,8 @@
 
 .pent-sneakers-img {
   width: 60%;
-  bottom: 200px;
-  right: -250px;
+  bottom: 150px;
+  right: -275px;
   transform: rotateZ(30deg);
 }
 
@@ -148,11 +152,11 @@
 
 @keyframes changeshoes {
   0% {
-    transform: translate(0) rotate(0);
+    transform: translate(-90px, 0) rotate(0deg);
   }
 
   5% {
-    transform: translate(0) rotate(5deg);
+    transform: translate(-90px, 0) rotate(5deg);
   }
 
   33% {
@@ -172,6 +176,6 @@
   }
 
   100% {
-    transform: translate(0) rotate(360deg);
+    transform: translate(-90px, 0) rotate(360deg);
   }
 }
