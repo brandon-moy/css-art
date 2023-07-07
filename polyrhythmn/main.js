@@ -47,8 +47,11 @@ const draw = () => {
     pen.arc(center.x, center.y, arcRadius, Math.PI, 2 * Math.PI);
     pen.stroke();
 
+    const fullLoop = 2 * Math.PI;
+    const numberOfLoops = 50 - index;
+    const velocity = (fullLoop * numberOfLoops) / 900;
     const maxAngle = 2 * Math.PI;
-    const distance = Math.PI + (elapsedTime * 0.5);
+    const distance = Math.PI + (elapsedTime * velocity);
     const modDistance = distance % maxAngle;
     const adjustedDistance = modDistance >= Math.PI ? modDistance : maxAngle - modDistance;
 
@@ -58,7 +61,7 @@ const draw = () => {
     // draw circle
     pen.fillStyle = 'white';
     pen.beginPath();
-    pen.arc(x, y, length * 0.01, 0, 2 * Math.PI);
+    pen.arc(x, y, length * 0.005, 0, 2 * Math.PI);
     pen.fill();
   });
 
