@@ -17,7 +17,7 @@ const draw = () => {
 
   const end = {
     x: paper.width * 0.9,
-    y: paper
+    y: paper.height * 0.9
   };
 
   const length = end.x - start.x;
@@ -41,10 +41,13 @@ const draw = () => {
   pen.stroke();
 
   const arcRadius = length * 0.05;
+  const maxAngle = 2 * Math.PI;
   const distance = Math.PI + (elapsedTime * 0.5);
+  const modDistance = distance % maxAngle;
+  const adjustedDistance = modDistance >= Math.PI ? modDistance : maxAngle - modDistance;
 
-  const x = center.x + arcRadius * Math.cos(distance);
-  const y = center.y + arcRadius * Math.sin(distance);
+  const x = center.x + arcRadius * Math.cos(adjustedDistance);
+  const y = center.y + arcRadius * Math.sin(adjustedDistance);
 
   // draw circle
   pen.fillStyle = 'white';
