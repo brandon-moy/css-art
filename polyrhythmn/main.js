@@ -1,7 +1,12 @@
 const paper = document.querySelector('#paper');
 const pen = paper.getContext('2d');
 
+const startTime = new Date().getTime();
+
 const draw = () => {
+  const currentTime = new Date().getTime();
+  const elapsedTime = (currentTime - startTime) / 1000;
+
   paper.width = paper.clientWidth;
   paper.height = paper.clientHeight;
 
@@ -36,10 +41,10 @@ const draw = () => {
   pen.stroke();
 
   const arcRadius = length * 0.05;
-  const angle = Math.PI;
+  const distance = Math.PI + (elapsedTime * 0.5);
 
-  const x = center.x + arcRadius * Math.cos(angle);
-  const y = center.y + arcRadius * Math.sin(angle);
+  const x = center.x + arcRadius * Math.cos(distance);
+  const y = center.y + arcRadius * Math.sin(distance);
 
   // draw circle
   pen.fillStyle = 'white';
@@ -47,6 +52,7 @@ const draw = () => {
   pen.arc(x, y, length * 0.01, 0, 2 * Math.PI);
   pen.fill();
 
+  requestAnimationFrame(draw);
 };
 
 draw();
