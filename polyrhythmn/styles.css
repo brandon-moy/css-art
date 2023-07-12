@@ -4,9 +4,8 @@ body {
   background-color: black;
   overflow: hidden;
   font-family: "Noto Sans", sans-serif;
-
-  /* background-image: url("bg.jpg");
-  background-size: cover; */
+  background-image: url("bg2.avif");
+  background-size: contain;
 }
 
 * {
